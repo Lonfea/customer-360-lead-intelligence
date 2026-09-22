@@ -7,6 +7,10 @@ A privacy-aware reference implementation for customer identity resolution, expla
 
 > Independent portfolio project using synthetic events. No real customer information is included and the project is not affiliated with Infineon.
 
+## Dashboard preview
+
+![Customer 360 Lead Intelligence dashboard preview](docs/assets/dashboard-preview.png)
+
 ## Business problem
 
 Marketing, sales and CRM systems frequently contain duplicate identities, incomplete attributes and inconsistent events. This service creates deterministic customer profiles, scores purchase intent, routes qualified leads and exposes the evidence behind every decision.
@@ -43,4 +47,3 @@ streamlit run src/lead_intel/dashboard.py
 ```
 
 See [privacy and model governance](docs/governance.md).
-
