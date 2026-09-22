@@ -1,0 +1,9 @@
+services:
+  api:
+    build: .
+    ports: ["8000:8000"]
+  dashboard:
+    build: .
+    command: ["streamlit", "run", "src/lead_intel/dashboard.py", "--server.address=0.0.0.0"]
+    ports: ["8501:8501"]
+
