@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "customer-360-lead-intelligence"
+version = "1.0.0"
+description = "Privacy-aware customer identity resolution, lead scoring and funnel monitoring"
+requires-python = ">=3.11"
+dependencies = ["fastapi>=0.115", "uvicorn>=0.30", "streamlit>=1.37"]
+[project.optional-dependencies]
+dev = ["pytest>=8.3", "ruff>=0.6"]
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+[tool.ruff]
+line-length = 100
+
